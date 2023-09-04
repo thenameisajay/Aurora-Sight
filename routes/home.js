@@ -1,5 +1,6 @@
 const express = require("express");
 const xml2js = require("xml2js");
+const Data = require("../models/data");
 
 const router = express.Router();
 
@@ -30,6 +31,20 @@ router.get("/", async (req, res) => {
       const datetime = result.current_status.updated[0].datetime[0];
 
       // To send the data to the client, using json() method
+
+      // Store it in the database 
+
+       const data = new Data({
+            statusId,
+            datetime,
+            });
+
+            data.save().then(() => {
+                console.log("API Data has been saved to the database.");
+            
+              }
+              ).catch((err) => console.log(err));
+
 
       res.json({
         statusId,
