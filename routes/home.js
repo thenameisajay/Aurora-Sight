@@ -32,20 +32,21 @@ router.get("/", async (req, res) => {
 
       // To send the data to the client, using json() method
 
-      // Store it in the database 
+      // Store it in the database
 
-       const data = new Data({
-            statusId,
-            datetime,
-            });
+      const data = new Data({
+        statusId,
+        datetime,
+      });
 
-            data.save().then(() => {
-                console.log("API Data has been saved to the database.");
-            
-              }
-              ).catch((err) => console.log(err));
+      data
+        .save()
+        .then(() => {
+          console.log("API Data has been saved to the database.");
+        })
+        .catch((err) => console.log(err));
 
-
+      // Send the data to the client.
       res.json({
         statusId,
         datetime,
