@@ -1,18 +1,13 @@
-const mongoose = require('mongoose');
-
+const mongoose = require("mongoose");
 
 //Defining the schema for the aurora-watch API data
 const weatherSchema = new mongoose.Schema({
-   statusId: String,
+  statusId: String,
   datetime: String,
-  date: { type: Date, default: Date.now }
+  date: { type: Date, default: Date.now },
 });
-
-
 
 // Creating the database model
 const Data = mongoose.model("Data", weatherSchema);
-
-
 
 module.exports = Data;
