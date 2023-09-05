@@ -13,7 +13,6 @@ function Feed() {
 
     async function fetchData() {
       const endpoint = `${API_URL}/api`;
-      console.log(endpoint);
       try {
         const response = await axios.get(endpoint); // Replace with your backend API route
         const datetime = new Date(response.data.datetime);

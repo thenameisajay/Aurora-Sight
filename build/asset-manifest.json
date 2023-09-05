@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.784a09f7.css",
-    "main.js": "/static/js/main.a16f8399.js",
+    "main.js": "/static/js/main.5aa48e92.js",
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "index.html": "/index.html",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg"
   },
   "entrypoints": [
     "static/css/main.784a09f7.css",
-    "static/js/main.a16f8399.js"
+    "static/js/main.5aa48e92.js"
   ]
 }
