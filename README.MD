@@ -1,5 +1,8 @@
 # Aurora Sight
 
+##Link to the application:
+https://aurora-sight.tech
+
 ## Introduction
 This is simple MERN stack application that allows users to check if an aurora is visible in the sky (UK only). The application uses the [AuroraWatch UK](http://aurorawatch.lancs.ac.uk/) API to get the current aurora status and displays it in a simple UI.
 
@@ -13,7 +16,15 @@ To install the application:
 
 
 ## Usage    
-The application is simple to use. It automatically retrives the data for you and it supports both light and dark mode. The application is also responsive and can be used on mobile devices and tablets.
+The application is simple to use. It automatically retrives the data for you.
+
+
+## Features:
+<ul>
+<li> Responsive UI </li>
+<li> Light and Dark Mode </li>
+<li> Automatic data retrieval </li>
+</ul>
 
 
 ## Technologies
