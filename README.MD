@@ -46,10 +46,10 @@ The application uses the following technologies:
 The application is licensed under the MIT license.
 
 ## Screenshots
-<img src="https://github.com/thenameisajay/Aurora-Sight/blob/main/screenshots/1.png" width="800px" height="400px" alt="1">
-<img src="https://github.com/thenameisajay/Aurora-Sight/blob/main/screenshots/2.png" width="800px" height="400px" alt="2">
-<img src="https://github.com/thenameisajay/Aurora-Sight/blob/main/screenshots/3.png" width="800px" height="400px" alt="3">
-<img src="https://github.com/thenameisajay/Aurora-Sight/blob/main/screenshots/4.png" width="800px" height="400px" alt="4">
+<img src="https://github.com/thenameisajay/Aurora-Sight/blob/main/screenshots/1.png" width="1000px" height="400px" alt="1">
+<img src="https://github.com/thenameisajay/Aurora-Sight/blob/main/screenshots/2.png" width="1000px" height="400px" alt="2">
+<img src="https://github.com/thenameisajay/Aurora-Sight/blob/main/screenshots/3.png" width="1000px" height="400px" alt="3">
+<img src="https://github.com/thenameisajay/Aurora-Sight/blob/main/screenshots/4.png" width="1000px" height="400px" alt="4">
 
 
 ## Contributions:
