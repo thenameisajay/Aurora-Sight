@@ -9,7 +9,7 @@ function Feed() {
 
   useEffect(() => {
     // Retrieve the API URL from the environment variable, or default to 'http://localhost:3000'
-    const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3000";
+    const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3000/api";
 
     async function fetchData() {
       try {
