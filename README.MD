@@ -1,6 +1,6 @@
 # Aurora Sight
 
-##Link to the application:
+## Link to the application:
 https://aurora-sight.tech
 
 ## Introduction
