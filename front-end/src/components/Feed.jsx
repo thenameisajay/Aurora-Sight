@@ -12,8 +12,10 @@ function Feed() {
     const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3000/api";
 
     async function fetchData() {
+      const endpoint = `${API_URL}/api`;
+      console.log(endpoint);
       try {
-        const response = await axios.get(API_URL); // Replace with your backend API route
+        const response = await axios.get(endpoint); // Replace with your backend API route
         const datetime = new Date(response.data.datetime);
         const formattedTime = datetime.toLocaleTimeString([], {
           hour: "2-digit",
