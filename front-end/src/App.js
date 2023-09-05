@@ -1,5 +1,5 @@
 import React from "react";
-import "../public/css/styles.css";
+import "./styles.css"
 import DarkMode from "./components/DarkMode/DarkMode";
 import Feed from "./components/Feed";
 

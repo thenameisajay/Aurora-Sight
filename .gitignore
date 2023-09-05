@@ -1,3 +1,7 @@
 /node_modules
 /package-lock.json
 .env
+front-end/.env
+front-end/node_modules
+front-end/package-lock.json
+```
