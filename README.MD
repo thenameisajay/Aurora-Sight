@@ -46,7 +46,7 @@ The application uses the following technologies:
 The application is licensed under the MIT license.
 
 ## Screenshots
-
+<img src="https://github.com/thenameisajay/Aurora-Sight/blob/main/screenshots/1.png" width="200px" height="200px" alt="IMG_9371">
 
 
 ## Contributions:
