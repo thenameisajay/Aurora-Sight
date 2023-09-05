@@ -1,7 +1,7 @@
 # Aurora Sight
 
 ## Link to the application:
-https://aurora-sight.tech
+https://aurora-sight-2587ecd1e763.herokuapp.com/
 
 ## Introduction
 
