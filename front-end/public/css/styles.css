@@ -1,0 +1,213 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #f1f1f1;
+  --border-color: 1px solid white;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1 {
+  font-family: "Francois One", sans-serif;
+}
+
+.custom-card {
+  display: flex;
+  align-self: center;
+  width: 20rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.logo-container {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.logo-container img {
+  height: 100px;
+  width: 100px;
+}
+
+/* Dark Mode CSS Style */
+.dark_mode {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+}
+
+.dark_mode_label {
+  width: 65px;
+  height: 30px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dark_mode_label:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.dark_mode_input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.dark_mode_input:checked + .dark_mode_label {
+  background: #242424;
+}
+
+.dark_mode_input:checked + .dark_mode_label:after {
+  left: 62px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.dark_mode_label:active:after {
+  width: 30px;
+}
+
+.dark_mode_label svg {
+  position: absolute;
+  width: 20px;
+  top: 5px;
+  z-index: 100;
+}
+
+.dark_mode_label svg.sun {
+  left: 5px;
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.dark_mode_label svg.moon {
+  left: 40px;
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+
+.dark_mode_input:checked + .dark_mode_label svg.sun {
+  fill: #7e7e7e;
+}
+
+.dark_mode_input:checked + .dark_mode_label svg.moon {
+  fill: #fff;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.updated-time {
+  margin-bottom: -15px;
+  margin-left: -10px;
+  text-align: center;
+}
+
+.color-container {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  align-self: center;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.heading-2 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-family: "Bungee Shade", cursive;
+}
+
+.alert {
+  text-align: center;
+}
+
+.updated-time {
+  font-family: "Pompiere", cursive;
+  font-size: 1.2rem;
+}
+
+.meaning-container {
+  margin-top: 20px;
+  font-family: "Roboto Mono", monospace;
+  text-align: start;
+}
+
+.meaning .meaning-content-container {
+  text-align: center;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  .custom-card,
+  .content-container {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  .custom-card {
+    border: 1px white solid;
+    /* Modified Box Shadow for Dark Mode */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px 2px,
+      rgba(0, 0, 0, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+}
+.footer-container {
+  margin-top: 20px;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #01b0fe;
+}
